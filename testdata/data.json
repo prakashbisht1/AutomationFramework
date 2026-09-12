@@ -1,0 +1,33 @@
+[{
+    "userName": "prakashbisht1990@gmail.com",
+    "passWord": "India@123",
+    "productName": "iphone 13 pro",
+    "fname": "prakash",
+    "lname": "bisht",   
+    "eamil": "prakashbisht1990@gmail.com",
+    "number": "5052454054",
+    "jobTitle": "3: Engineer",
+    "gender": "Male",
+    "password": "India@123",
+    "confirmPassword": "India@123",
+    "registerSuccessMessage": "Account Created Successfully"
+
+},
+
+{
+    "userName": "rajeshsingh@gmail.com",
+    "passWord": "India@123",
+    "productName": "iphone 13 pro",
+    "fname": "Rajesh",
+    "lname": "Singh",   
+    "eamil": "rajeshsingh@gmail.com",
+    "number": "1234567890",
+    "jobTitle": "3: Engineer",
+    "gender": "Male",
+    "password": "India@123",
+    "confirmPassword": "India@123",
+    "registerSuccessMessage": "Account Created Successfully"
+
+
+}]
+
