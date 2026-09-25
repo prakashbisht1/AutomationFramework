@@ -1,7 +1,7 @@
 import { test } from '@playwright/test';
-const { LoginPage } = require('../pageObject/loginPage');
+const { LoginPage } = require('../pageObject/LoginPage');
 const { SignUpPage } = require('../pageObject/SignUpPage');
-const dataSet = JSON.parse(JSON.stringify(require('../testdata/data.json')));
+const dataSet = require('../testdata/data.json');
 
 
 test(' Register New User', async ({ page }) => {
@@ -11,8 +11,8 @@ test(' Register New User', async ({ page }) => {
 
   await loginPage.navigateToLoginPage();
   await signUpPage.signUp
-  (dataSet.fname, dataSet.lname, dataSet.eamil, dataSet.number,
-    dataSet.jobTitle, dataSet.gender, dataSet.password, dataSet.confirmPassword, dataSet.registerSuccessMessage);
+  (dataSet[0].fname, dataSet[0].lname, dataSet[0].eamil, dataSet[0].number,
+    dataSet[0].jobTitle, dataSet[0].gender, dataSet[0].password, dataSet[0].confirmPassword, dataSet[0].registerSuccessMessage);
 
 });
 

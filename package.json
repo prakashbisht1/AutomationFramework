@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "regression": "npx playwright test",
-     "web": "npx playwright test --grep @web"
+    "regression": "npx playwright test"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +13,8 @@
   "devDependencies": {
     "@playwright/test": "^1.62.1",
     "@types/node": "^26.4.1"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.3"
   }
 }

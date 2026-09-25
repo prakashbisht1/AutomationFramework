@@ -1,8 +1,8 @@
-const { LoginPage } = require('../pageObject/loginPage');
+const { LoginPage } = require('../pageObject/LoginPage');
 const { DashboardPage } = require('../pageObject/DashboardPage');
 const { CheckoutPage } = require('../pageObject/CheckoutPage');
-const { test, expect } = require('@playwright/test');
-const dataSet = JSON.parse(JSON.stringify(require('../testdata/data.json')));
+const { test } = require('@playwright/test');
+const dataSet = require('../testdata/data.json');
 
 test(' check out', async ({ page }) => {
 
@@ -14,11 +14,11 @@ test(' check out', async ({ page }) => {
     await loginPage.navigateToLoginPage();
     await page.waitForLoadState('networkidle');
     await loginPage.validLogin(
-        dataSet.userName,
-        dataSet.passWord
+        dataSet[0].userName,
+        dataSet[0].passWord
     );
 
-    await dashboardPage.addProductToCart(dataSet.productName);
+    await dashboardPage.addProductToCart(dataSet[0].productName);
     await checkoutPage.checkOut()
 });
 

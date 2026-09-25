@@ -16,7 +16,7 @@ class LoginPage
 
     async navigateToLoginPage()
     {
-        await this.page.goto('https://rahulshettyacademy.com/client/#/auth/login');
+        await this.page.goto('');
        
     }
 
